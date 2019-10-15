@@ -1,10 +1,17 @@
 
 ### Questions
-* Unclear on section 17
-    * let's build on probability
-* Wants to have questions, but unsure of what is going wrong. So unsure what to ask. 
+* permutation/combination problems
 
 ### Objectives
+YWBAT 
+- apply permutations to solve a problem
+- apply combinations to solve a problem
+- describe the choose function
+
+[worksheet 1 here](https://math.berkeley.edu/~pglutz/10Bsp17/disc0.pdf)
+
+
+[worksheet 2 here](http://lordbyng.net/math/wp-content/uploads/2010/06/Combinatorics-worksheet-KEY.pdf)
 
 ### Outline
 
@@ -26,13 +33,13 @@ C = {2, 4, 6, 8}
 
 
 ```python
-A.union(B)
+A.union(B).union(C)
 ```
 
 
 
 
-    {1, 2, 3, 4}
+    {1, 2, 3, 4, 6, 8}
 
 
 
@@ -84,6 +91,43 @@ factorial(20)
 def combination(n,k):
     combin = factorial(n)/(factorial(n-k)*factorial(k))
     return combin
+```
+
+###  what is the probability of throwing a 'full house' when throwing 5 dices?  (3 of a certain number and 2 of another number)
+
+numerator -> all of the possible full houses
+
+denominator -> all the possible rolls
+
+denominator = 6\*6\*6\*6\*6 = 7776
+
+numerator = 6\*5 \* 5 C 2 = 30 \* 10 = 300
+
+answer = 300/7776
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
 ```
 
 
